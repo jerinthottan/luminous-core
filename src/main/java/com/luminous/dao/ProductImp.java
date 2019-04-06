@@ -60,7 +60,7 @@ public class ProductImp implements ProductDAO
 	}
 
 
-	public List<Product> listProducts() 
+	public  List<Product> listProducts() 
 	{
 		Session session=sessionFactory.openSession();
 		Query query=session.createQuery("from Product");

@@ -1,5 +1,4 @@
 package com.luminous.model;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -7,14 +6,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class UserDetail 
-{
+public class UserDetail {
+
 	@Id
 	@GeneratedValue
+	
 	String username;
 	String password;
-	String role; //Admin->Adding,Deleting,Updating Product,Category,Supplier
-				 //User->Add Product To cart,Update and Delete from Cart and Purchase
+	String role;
 	boolean enabled;
 	String customerName;
 	String customerAddr;

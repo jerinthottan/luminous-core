@@ -38,11 +38,11 @@ public class UserDetailUnitTest {
 		user.setRole("ROLE_USER");
 		user.setCustomerName("Tom Roy");
 		user.setCustomerAddr("Kerala");
-		
 		assertTrue("Problem in adding User:",userDAO.registerUser(user));
 	}
+	
 	@Test
-	public void listCategoriesTest()
+	public void listuserdetailTest()
 	{
 		List<UserDetail> listUserDetail=userDAO.listUserDetails();
 		assertTrue("Problem in Listing Categories:",listUserDetail.size()>0);
